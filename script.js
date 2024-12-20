@@ -8,3 +8,10 @@ for (let i = 1; i <= (16 * 16); i++) {
     grid.textContent = `${i}`;
 };
 
+const items = gridContainer.querySelectorAll("div")
+items.forEach((div) => {
+    div.addEventListener("mouseover", (e) => {
+        e.target.style.cssText = "background-color: orange; color: black"
+    })
+});
+

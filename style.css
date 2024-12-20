@@ -10,7 +10,7 @@ body {
     box-sizing: border-box;
     padding: 10px;
     border: 2px solid red;
-    background-color: beige;
+    background-color: orangered;
     height: 100vh;
     width: 100%;
 }
@@ -26,3 +26,5 @@ body {
     width: calc(100% / 16);
     height: calc(100% / 16);
 }
+
+
