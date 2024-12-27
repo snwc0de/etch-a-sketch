@@ -15,3 +15,19 @@ items.forEach((div) => {
     })
 });
 
+const btn = document.querySelector("#btn");
+const newBtn = document.createElement("button");
+newBtn.setAttribute("class", "newBtn");
+const resetBtn = document.createElement("button");
+resetBtn.classList.add("resetBtn");
+btn.appendChild(newBtn);
+
+newBtn.addEventListener("click", removeGrid);
+
+function removeGrid () {
+    while (gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild)
+    }
+}
+
+
