@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -8,22 +8,55 @@ body {
     display: flex;
     flex-flow: row wrap;
     box-sizing: border-box;
-    padding: 10px;
-    border: 2px solid red;
-    background-color: orangered;
-    height: 100vh;
-    width: 100%;
+    border: 1px solid red;
+    justify-self: center;
+    align-self: end;
+    height: 500px;
+    width: 500px;
 }
 
 #gridContainer > .item {
     flex: 1 1 auto;
     text-align: center;
     box-sizing: border-box;
-    border: 2px solid black;
-    color: white;
-    background-color: green;
+    border: 1px solid #000000;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     min-width: 0;
-
 }
+
+#btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #fff;
+}
+
+#btn > button{
+    width: 120px;
+    height: calc(100px / 3);
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: 3px solid #000000;
+}
+
+#btn > button:hover {
+    width: 150px;
+    height: calc(120px / 3);
+}
+
+.newBtn {
+    background-color: #29b835;
+    margin-right: 20px;
+}
+
+.resetBtn {
+    background-color: #cb2424;
+}
+
 
 
