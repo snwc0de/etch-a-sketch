@@ -15,7 +15,7 @@ body {
     width: 100%;
 }
 
-#gridContainer > div {
+#gridContainer > .item {
     flex: 1 1 auto;
     text-align: center;
     box-sizing: border-box;
@@ -23,8 +23,7 @@ body {
     color: white;
     background-color: green;
     min-width: 0;
-    width: calc(100% / 16);
-    height: calc(100% / 16);
+
 }
 
 
