@@ -1,4 +1,4 @@
-
+//function to make grids
 function makeGrid(size) {
     const gridContainer = document.querySelector("#gridContainer");
     let itemSize = (100 / size);
@@ -84,5 +84,20 @@ function resetGrid() {
         item.style.backgroundColor = "rgb(255, 255, 255)";
     })
 }
+
+//adds the header
+const header = document.querySelector("#header");
+const txt = ['E','T','C','H','-','A','-','S','K','E','T','C','H'];
+for(x = 0; x < txt.length; x++) {
+    let text = document.createElement("div");
+    text.setAttribute("class", "txt");
+    text.textContent = txt[x]
+    header.appendChild(text);
+
+    document.querySelectorAll(".txt").forEach(text => {
+        text.style.color = getRandomColor();
+        text.style.textShadow = "black 0px 0px 2px";
+    });
+};
 
 
