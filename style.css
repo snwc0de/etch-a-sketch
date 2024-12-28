@@ -2,6 +2,10 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-image: url(https://img.freepik.com/premium-photo/abstract-background-blur-gradient-design-graphic-art-wallpaper-website-background_963338-841.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #gridContainer {
@@ -19,7 +23,7 @@ body {
     flex: 1 1 auto;
     text-align: center;
     box-sizing: border-box;
-    border: 1px solid #000000;
+    border: 0.5px solid #000000;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     min-width: 0;
@@ -31,7 +35,7 @@ body {
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 50px;
-    background-color: #fff;
+
 }
 
 #btn > button{
